@@ -85,6 +85,71 @@
 </head>
 
 <body>
+  <nav style="
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(0,0,0,0.9);
+  backdrop-filter:blur(10px);
+  padding:20px 40px;
+  z-index:1000;
+  border-bottom:1px solid #222;
+">
+
+  <div style="
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    max-width:1200px;
+    margin:auto;
+  ">
+
+    <div style="
+      font-size:28px;
+      font-weight:bold;
+      color:#facc15;
+    ">
+      Emma BJJ
+    </div>
+
+    <div style="
+      display:flex;
+      gap:25px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    ">
+
+      <a href="#about"
+         style="color:white;text-decoration:none;">
+         About
+      </a>
+
+      <a href="#ranking"
+         style="color:white;text-decoration:none;">
+         Ranking
+      </a>
+
+      <a href="#journey"
+         style="color:white;text-decoration:none;">
+         Journey
+      </a>
+
+      <a href="#sponsors"
+         style="color:white;text-decoration:none;">
+         Sponsors
+      </a>
+
+      <a href="#social"
+         style="color:white;text-decoration:none;">
+         Social
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
 
   <section class="hero">
 
@@ -154,7 +219,7 @@
   </p>
 
 </section>
-<section style="padding:100px 20px;background:#000;text-align:center;border-top:1px solid #222;">
+<section id ="about" style="padding:100px 20px;background:#000;text-align:center;border-top:1px solid #222;">
 
   <h2 style="color:#facc15;letter-spacing:4px;">
     CURRENT RANKING (AJP SPAIN)
@@ -195,7 +260,7 @@
   </a>
 
 </section>
-  <section style="padding:100px 20px;background:#111;text-align:center;">
+  <section id ="ranking" style="padding:100px 20px;background:#111;text-align:center;">
 
   <h2 style="color:#facc15;letter-spacing:4px;">
     COMPETITION JOURNEY
@@ -279,7 +344,7 @@
   </div>
 
 </section>
-  <section style="padding:100px 20px;background:#000;text-align:center;">
+  <section id ="jouney" style="padding:100px 20px;background:#000;text-align:center;">
 
   <h2 style="color:#facc15;letter-spacing:4px;">
     SPONSORS & PARTNERS
@@ -375,7 +440,7 @@
   </a>
 
 </section>
-  <section style="padding:100px 20px;background:#111;text-align:center;">
+  <section id="sponsors" style="padding:100px 20px;background:#111;text-align:center;">
 
   <h2 style="color:#facc15;letter-spacing:4px;">
     SOCIAL MEDIA
