@@ -159,6 +159,143 @@ section{
         font-size:18px;
       }
     }
+    /* =========================================
+   EMMA BJJ — IDENTIDAD VISUAL GLOBAL
+   Estilo deportivo y agresivo
+   ========================================= */
+
+:root {
+  --emma-magenta: #FF168A;
+  --emma-magenta-dark: #3A0B27;
+  --emma-black: #080808;
+  --emma-card: #151015;
+  --emma-white: #FFFFFF;
+  --emma-gold: #D4AF37;
+}
+
+/* Fondo global con iluminación magenta */
+html {
+  background: var(--emma-black);
+}
+
+body {
+  background:
+    radial-gradient(
+      ellipse at 12% 18%,
+      rgba(255, 22, 138, 0.14),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 88% 48%,
+      rgba(255, 22, 138, 0.11),
+      transparent 38%
+    ),
+    linear-gradient(
+      180deg,
+      #080808 0%,
+      #100811 45%,
+      #080808 100%
+    ) !important;
+  color: var(--emma-white);
+}
+
+/* Fondo común para todas las secciones */
+section[style*="background"] {
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255, 22, 138, 0.055),
+      transparent 45%,
+      rgba(255, 22, 138, 0.035)
+    ),
+    linear-gradient(
+      180deg,
+      #0B090B,
+      #100A10 55%,
+      #080808
+    ) !important;
+  border-color: rgba(255, 22, 138, 0.20) !important;
+}
+
+/* Títulos */
+h1 {
+  text-shadow:
+    0 0 18px rgba(255, 22, 138, 0.12);
+}
+
+h2 {
+  color: var(--emma-magenta) !important;
+}
+
+/* Enlaces y botones */
+a {
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+a:hover {
+  box-shadow: 0 0 22px rgba(255, 22, 138, 0.28);
+}
+
+/* Botones con fondo magenta */
+a.btn,
+a[style*="background:#facc15"],
+a[style*="background: #facc15"],
+a[style*="background:#FF168A"] {
+  background: var(--emma-magenta) !important;
+  color: #FFFFFF !important;
+  border-color: var(--emma-magenta) !important;
+}
+
+/* Tarjetas */
+.card {
+  background: var(--emma-card);
+  border: 1px solid rgba(255, 22, 138, 0.22) !important;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--emma-magenta) !important;
+  box-shadow: 0 12px 35px rgba(255, 22, 138, 0.15);
+}
+
+/* Estadísticas y cifras destacadas */
+.card h3 {
+  color: var(--emma-magenta) !important;
+}
+
+/* Elementos destacados que aún usan el amarillo antiguo */
+h1[style*="#facc15"],
+h2[style*="#facc15"],
+h3[style*="#facc15"],
+h4[style*="#facc15"],
+span[style*="#facc15"],
+strong[style*="#facc15"] {
+  color: var(--emma-magenta) !important;
+}
+
+/* Bordes y efectos amarillos antiguos */
+.card[style*="#facc15"],
+div[style*="border:1px solid rgba(250,204,21"] {
+  border-color: rgba(255, 22, 138, 0.28) !important;
+}
+
+/* Mantener la adaptación móvil */
+@media (max-width: 768px) {
+  section[style*="background"] {
+    background:
+      linear-gradient(
+        145deg,
+        rgba(255, 22, 138, 0.06),
+        transparent 65%
+      ),
+      #0B090B !important;
+  }
+}
   </style>
   <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXXRL45MTG"></script>
